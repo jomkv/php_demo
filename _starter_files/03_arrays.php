@@ -52,4 +52,36 @@
   // echo $people[1]['first_name']; => john
 
   // * Convert array to json
-  var_dump(json_encode($people[0]));
+
+  //var_dump(json_encode($people[0]));
+
+  // * Challenge: Demonstrate how to modify the arrays dynamically by adding, updating, 
+  // * or removing elements and output the arrays after each modification
+  $students = [
+    [
+      'name' => 'jom',
+      'grade' => 1.75,
+      'isFailing' => false,
+    ],
+    [
+      'name' => 'john',
+      'grade' => 1.00,
+      'isFailing' => false,
+    ],
+    [
+      'name' => 'billy',
+      'grade' => 4.00,
+      'isFailing' => true,
+    ],
+  ];
+
+  // echo $students[0]['name'], "'s grade before: ", $students[0]['grade'], "\n"; => 1.75 
+  // $students[0]['grade'] = 4.00;
+  // $students[0]['isFailing'] = true;
+  // echo $students[0]['name'], "'s grade after: ", $students[0]['grade']; => 4.00
+
+  // echo $students[2]['name'], "'s grade before: ", $students[2]['grade'], "\n"; => 4.00
+  // $students[2]['grade'] = 1.00;
+  // $students[2]['isFailing'] = false;
+  // echo $students[2]['name'], "'s grade after: ", $students[2]['grade']; => 1.00
+  
