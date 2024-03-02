@@ -22,3 +22,26 @@
 - Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variables are case-sensitive ($name and $NAME are two different variables)
 */
+
+  // * $ - for declaring and referencing variables
+  $name = 'Jomarculus'; // string
+  $age = 19; // int
+  $has_kids = false; // bool
+  $money_on_wallet = 24.10; // float
+
+  // var_dump($has_kids);
+
+  // * Use double quotes for string placeholders
+  // echo "$name is $age years old and has $money_on_wallet pesos ";
+
+  $sum = 5 + 5;
+  // var_dump($sum);
+  // echo 10 + 1;
+  // echo 10 - 1;
+  // echo 10 / 2;
+  // echo 9 % 3;
+
+  // * define('name', 'value') - for declaring const / constants
+  // * common convention is for the name to be all caps
+  define('NAME', "jomarculus");
+  echo NAME; 
